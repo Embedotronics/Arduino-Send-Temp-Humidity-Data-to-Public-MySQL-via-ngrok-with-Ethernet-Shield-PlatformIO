@@ -9,8 +9,10 @@ void ethernetSetup(byte *mac, IPAddress ip) {
         Ethernet.begin(mac, ip);
     }
     delay(1000);
+    Serial.println("Ethernet Setup");
 }
 
+// Sending Data to MySQL server
 void sendData(const char *server, float humidity, float temperature) {
     if (client.connect(server, 80)) {
         Serial.println("connected");
