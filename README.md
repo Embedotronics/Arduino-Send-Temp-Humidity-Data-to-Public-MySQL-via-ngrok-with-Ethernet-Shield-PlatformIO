@@ -38,35 +38,51 @@ Installation and Setup
 Clone the Repository:
 
 git clone https://https://github.com/Embedotronics/Arduino-Send-Temp-Humidity-Data-to-Public-MySQL-via-ngrok-with-Ethernet-Shield-PlatformIO.git
+
 Set Up XAMPP:
 
 Install XAMPP and start Apache and MySQL.
+
 Create a database and table in phpMyAdmin for storing sensor data.
+
 Connect Hardware:
 
 Connect the DHT sensor to the Arduino.
+
 Attach the Ethernet Shield to the Arduino and connect it to your network.
+
 Configure ngrok:
 
 Install ngrok and set up an account.
+
 Run ngrok to expose your local server.
+
 Upload Code to Arduino:
 
 Open the project in VS Code with PlatformIO.
+
 Write and upload the code to the Arduino.
+
 Usage
+
 Run the Local Server:
 
 Start Apache and MySQL using the XAMPP control panel.
+
 Expose Server with ngrok:
 
 ngrok http 80
+
 Note the public URL provided by ngrok.
+
 Monitor Data:
 
 The Arduino will send sensor data to the public URL, which will be logged in the MySQL database.
+
 Contributing
+
 Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
 
 License
+
 This project is licensed under the MIT License. See the LICENSE file for details.
